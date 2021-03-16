@@ -6,17 +6,23 @@ class Inputs extends Component{
 
     render(){
         return(
-            <form className="inputsForm">
-                <div className="form-group">
-                    <input type="text" placeholder="Name"></input>
+            <form>
+                <div class="form-group">
+                    <label>Contact name</label>
+                    <input type="text" class="form-control" placeholder="Enter name" />
                 </div>
-                <div className="form-group">
-                    <input type="text" placeholder="Phone"></input>
+                <div class="form-group">
+                    <label>Contact number</label>
+                    <input type="text" class="form-control" placeholder="Enter number" />
                 </div>
-                <div className="form-group">
-                    <input type="text" placeholder="ImageURL"></input>
+                <div class="form-group">
+                    <label>Contact number image</label>
+                    <input type="number" class="form-control" placeholder="Enter image number" />
                 </div>
-                <button type="submit" className="btn btn-info">Add</button>
+                <div class="form-group">
+                    <label>Contact Gender</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         )
     }

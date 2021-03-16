@@ -6,3 +6,13 @@
 .super-card{
     padding: 10px;
 }
+
+.star{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.star:focus{
+    outline: none;
+}
