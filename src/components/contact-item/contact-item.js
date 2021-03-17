@@ -42,16 +42,14 @@ class ContactItem extends Component{
                         <div className="card-body">
                             <h5 className="card-title">{name}</h5>
                             <p className="card-text">{phone}</p>
-                                    <nav class="navbar navbar-light bg-light justify-content-between">
-                                    <button onClick={this.setRandomImage} className="btn btn-primary">Random Image</button>
-                                     <form class="form-inline">
-                                        <button onClick={this.setStar} className="star">
-                                        <i className={starred}>
-                                        </i></button>
-                                    </form>
-                                </nav>
                         </div>
-                </div>
+                        <div className="card-footer">
+                            <button onClick={this.setRandomImage} className="btn btn-primary">Random Image</button>                       
+                                <button onClick={this.setStar} className="star">
+                                <i className={starred}>
+                                </i></button>
+                        </div>
+                    </div>
                 </div>
             )
     }
