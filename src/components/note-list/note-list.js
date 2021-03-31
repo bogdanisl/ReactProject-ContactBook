@@ -1,24 +1,37 @@
-import React, { Fragment } from 'react'
-import NoteItem from '../note-item/note-item'
+import React, { Component, Fragment } from 'react';
+import NoteItem from '../note-item/note-item';
+import { v4 as uuidv4 } from 'uuid';
+import { Link, Redirect } from 'react-router-dom';
 
-const NoteList = ({ notes }) =>{
-var noteTemplate;
-if (notes !== null){
-    noteTemplate = notes.map(item =>{
-        return(
-            <NoteItem
-                name={item.name}
-                text={item.text}
-            ></NoteItem>
-    )
-    })
 
-    return(
-        <Fragment>
-            {noteTemplate}
-        </Fragment>
-    )
+class NoteList extends Component {
+    state = {
+        notes: this.props.notes
+    }
+
+    render() {
+        const { notes } = this.state
+        var NotesTemplate
+        if (notes !== null) {
+            NotesTemplate = notes.map(item => {
+                return (<NoteItem
+                    id={item.id}
+                    key={uuidv4()}
+                    title={item.title}
+                    text={item.text}
+                    removeNote={this.props.removeNote}
+                ></NoteItem>)
+            })
+        }
+        return (
+            <Fragment>
+                <Link className="btn btn-dark" to="/add-note">Add new note</Link>
+                 <div className="row">
+                    {NotesTemplate} 
+                 </div>
+            </Fragment>
+        )
+    }
 }
-}
 
-export default NoteList;
+export default NoteList

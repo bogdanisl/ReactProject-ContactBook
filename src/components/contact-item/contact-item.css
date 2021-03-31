@@ -1,0 +1,86 @@
+
+.rect-btn{
+    border-radius: 0px !important;
+}
+.rect-btn:focus{
+    border-radius: 0px !important;
+    outline: none !important;
+}
+
+
+.contcat-card-cont{
+    padding: 10px;
+}
+
+.card-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.star{
+    font-size: 32px;
+    color: yellowgreen;
+}
+
+.image{
+    font-size: 32px;
+    color: rgb(34, 202, 214);
+}
+
+.image:hover{
+    cursor: pointer;
+    font-size: 32px;
+    color: rgb(41, 230, 243);
+}
+
+.star:hover{
+    cursor: pointer;
+    font-size: 32px;
+    color: rgb(180, 218, 106);
+}
+
+.trash{
+    font-size: 32px;
+    color: rgb(126, 46, 46);
+}
+
+.trash:hover{
+    cursor: pointer;
+    font-size: 32px;
+    color: rgb(153, 47, 47);
+}
+
+.edit{
+    font-size: 32px;
+    color: rgb(46, 101, 126);
+}
+
+.edit:hover{
+    cursor: pointer;
+    font-size: 32px;
+    color: rgb(92, 145, 170);
+}
+
+
+.minus{
+    font-size: 32px;
+    color: rgb(153, 49, 144);
+}
+
+.minus:hover{
+    cursor: pointer;
+    font-size: 32px;
+    color: rgb(204, 97, 195);
+}
+
+.eye{
+    font-size: 32px;
+    color: rgb(81, 178, 207);
+}
+
+.eye:hover {
+    cursor: pointer;
+    font-size: 32px;
+    color: rgb(125, 198, 201);
+}
